@@ -19,6 +19,7 @@ A JavaFX-based desktop food ordering application designed and developed by **Bhu
 
 >![image](https://github.com/user-attachments/assets/779a44d5-af51-48ad-be35-ecace6156579)
 ![image](https://github.com/user-attachments/assets/cbe89e31-4c21-4b67-b7e0-d0968f10d564)
+>
 ![image](https://github.com/user-attachments/assets/1b22ea37-683f-4a39-9f99-34c14cc46865)
 ![image](https://github.com/user-attachments/assets/832c0e30-d8fb-4d7d-8449-16743b867d0b)
 ![image](https://github.com/user-attachments/assets/85fb7fbd-9628-4d28-9ac9-6bbb228b0acb)
