@@ -38,18 +38,19 @@ A JavaFX-based desktop food ordering application designed and developed by **Bhu
 
 ## How to Run
 
-1. **Clone the Repository**:
+1.📥 **Clone the Repository**
 
 ```bash
-git clone https://github.com/your-username/jecrc-foods.git
+git clone https://github.com/bhumik-pareek/jecrc-foods.git
+
 ```
 
-2. **Open in IntelliJ**:
+2.🛠️ **Open in IntelliJ**:
 
 * Open IntelliJ IDEA
 * Choose "Open" and select the project folder
 
-3. **Run**:
+3.▶️ **Run**:
 
 * Locate `JECRC_FoodsApp.java`
 * Click the green play button to run
