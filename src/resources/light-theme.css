@@ -1,0 +1,56 @@
+.root {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+}
+
+.label {
+    -fx-text-fill: #000000;
+    -fx-font-size: 14px;
+}
+
+.label.title {
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+/* Buttons */
+.button {
+    -fx-background-color: #eeeeee;
+    -fx-text-fill: #000000;
+    -fx-border-color: #ccc;
+}
+
+.button:hover {
+    -fx-background-color: #dddddd;
+}
+
+/* ComboBox, TextField, ListView etc. */
+.combo-box, .combo-box-base, .text-field, .list-view {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-border-color: #ccc;
+}
+.product-card {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #ccc;
+    -fx-border-width: 1px;
+    -fx-border-radius: 8px;
+    -fx-background-radius: 8px;
+    -fx-padding: 10px;
+}
+
+/* Hover effect */
+.product-card:hover {
+    -fx-background-color: #eaeaea;
+    -fx-border-color: #aaa;
+}
+
+/* Focused (e.g. after category/sort click) */
+.product-card:focused {
+    -fx-background-color: #f9f9f9;
+    -fx-border-color: #ccc;
+}
+.hoverable-card:hover {
+    -fx-background-color: #f5f5f5;
+    -fx-border-color: #7c3aed;
+}

@@ -89,10 +89,16 @@ import java.util.stream.Collectors;
         public void start(Stage primaryStage) {
             primaryStage.setTitle("JECRC FOODS - Food Ordering App");
 
+            //root layout
             BorderPane root = new BorderPane();
 
+            // Scene
+            Scene scene = new Scene(root, 1200, 800);   // Scene is declared here
+            ThemeManager.getInstance().applyTheme(scene);     // Scene is passed here
+
             // Header
-            root.setTop(createHeader());
+            root.setTop(createHeader(scene));
+
 
             // Main layout - three columns: left filters, center products, right cart
             HBox mainContent = new HBox();
@@ -102,6 +108,7 @@ import java.util.stream.Collectors;
             // Left Sidebar: Filters
             VBox filterSidebar = createFilterSidebar();
             filterSidebar.setPrefWidth(180);
+            filterSidebar.setId("filter-sidebar");
 
             // Center: Product Grid
             ScrollPane centerScroll = new ScrollPane();
@@ -127,18 +134,19 @@ import java.util.stream.Collectors;
             // Initial populate product grid
             updateProductGrid("");
 
-            Scene scene = new Scene(root, 1200, 800);
+            //Finalized scene here
             primaryStage.setScene(scene);
             primaryStage.show();
         }
 
-        private HBox createHeader() {
+        private HBox createHeader(Scene scene) {
             HBox header = new HBox();
             header.setStyle("-fx-background-color: linear-gradient(to right, #7c3aed, #c084fc);");
             header.setPadding(new Insets(10, 20, 10, 20));
             header.setSpacing(16);
             header.setAlignment(Pos.CENTER_LEFT);
 
+            // Logo
             Label logoLabel = new Label("JECRC Foods");
             logoLabel.setStyle("-fx-font-size: 24px; -fx-text-fill: white; -fx-font-weight: bold;");
             logoLabel.setMinWidth(200);
@@ -151,22 +159,46 @@ import java.util.stream.Collectors;
                 updateProductGrid(newVal.trim());
             });
 
+            // Spacer to push buttons to the right
+            Region spacer = new Region();
+            HBox.setHgrow(spacer, Priority.ALWAYS);
+
+            // Theme toggle button
+            Button themeToggleButton = new Button("☀"); // Use plain sun symbol (U+2600)
+            themeToggleButton.setStyle("-fx-font-size: 16px; -fx-background-color: transparent; -fx-text-fill: white;");
+
+            themeToggleButton.setOnAction(e -> {
+                ThemeManager.getInstance().toggleTheme(scene);
+                // Toggle between sun and moon icons
+                if (themeToggleButton.getText().equals("☀")) {
+                    themeToggleButton.setText("🌙"); // Crescent moon (U+1F319)
+                } else {
+                    themeToggleButton.setText("☀");
+                }
+            });
+
+
             // Cart icon with count
             StackPane cartIconPane = new StackPane();
-            Label cartIconLabel = new Label("\uD83D\uDED2"); // Shopping cart emoji as fallback icon
+            Label cartIconLabel = new Label("\uD83D\uDED2"); // Shopping cart emoji
             cartIconLabel.setStyle("-fx-font-size:24px; -fx-text-fill: white;");
+
             cartCountLabel = new Label("0");
             cartCountLabel.setStyle(
-                    "-fx-background-color: red; -fx-text-fill: white; -fx-font-weight: bold; -fx-min-width: 15px; -fx-min-height: 15px; -fx-alignment: center; -fx-background-radius: 10px;"
+                    "-fx-background-color: red; -fx-text-fill: white; -fx-font-weight: bold;" +
+                            " -fx-min-width: 15px; -fx-min-height: 15px; -fx-alignment: center; -fx-background-radius: 10px;"
             );
             StackPane.setAlignment(cartCountLabel, Pos.TOP_RIGHT);
             StackPane.setMargin(cartCountLabel, new Insets(0, 0, 15, 15));
+
             cartIconPane.getChildren().addAll(cartIconLabel, cartCountLabel);
 
-            header.getChildren().addAll(logoLabel, searchField, cartIconPane);
+            // Add all elements to header
+            header.getChildren().addAll(logoLabel, searchField, spacer, themeToggleButton, cartIconPane);
 
             return header;
         }
+
 
         private ComboBox<String> priceSortCombo;
         private VBox createFilterSidebar() {
@@ -208,12 +240,15 @@ import java.util.stream.Collectors;
             VBox sidebar = new VBox();
             sidebar.setSpacing(12);
             sidebar.setPadding(new Insets(10));
-            sidebar.setStyle("-fx-background-color: #f5f5f5; -fx-border-color: #ccc; -fx-border-width: 0 0 0 1px;");
+            sidebar.setId("cart-sidebar");
+
 
             Label title = new Label("Shopping Cart");
+            title.setId("cart-title");
             title.setFont(Font.font(20));
 
             ListView<CartItem> cartListView = new ListView<>();
+            cartListView.getStyleClass().add("cart-item");
             cartListView.setPrefHeight(500);
             cartListView.setCellFactory(param -> new CartItemCell());
 
@@ -276,9 +311,7 @@ import java.util.stream.Collectors;
             card.setPrefWidth(200);
             card.setSpacing(8);
             card.setPadding(new Insets(10));
-            card.setStyle(
-                    "-fx-background-color: white; -fx-border-color: rgba(221,221,221,0.78); -fx-border-radius: 8px; -fx-background-radius: 8px;"
-            );
+            card.getStyleClass().add("product-card");
 
             ImageView imageView = new ImageView();
             Image image = new Image(product.imageUrl, 200, 140, true, true);
@@ -329,11 +362,7 @@ import java.util.stream.Collectors;
             card.getChildren().addAll(imageView, nameLabel, descLabel, priceLabel, actionBox);
 
             // Hover effect
-            card.setOnMouseEntered(e -> card.setStyle(
-                    "-fx-background-color: #fafafa; -fx-border-color: #7c3aed; -fx-border-radius: 8px; -fx-background-radius: 8px;"));
-            card.setOnMouseExited(e -> card.setStyle(
-                    "-fx-background-color: white; -fx-border-color: #ddd; -fx-border-radius: 8px; -fx-background-radius: 8px;"));
-
+            card.getStyleClass().add("product-card");
             return card;
         }
 
