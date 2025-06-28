@@ -41,28 +41,36 @@ Built for performance and user experience using **OpenJDK 24** and **IntelliJ ID
 ## 🖼️ Screenshots v1.1
 
 ### 🔆 Light Theme – Home Page
-![Light Theme](![Screenshot 2025-06-28 135931](https://github.com/user-attachments/assets/0670aff4-2dbd-433f-beed-334a34b64b01) )
+  ![Screenshot 2025-06-28 135931](https://github.com/user-attachments/assets/0670aff4-2dbd-433f-beed-334a34b64b01) 
 
 
 ### 🌙 Dark Theme – Home Page
-![Dark Theme]( ![Screenshot 2025-06-28 140050](https://github.com/user-attachments/assets/d91bc442-11e9-436a-84f0-9474f3667d75) )
+  ![Screenshot 2025-06-28 140050](https://github.com/user-attachments/assets/d91bc442-11e9-436a-84f0-9474f3667d75) 
 
 ### 🛒 Cart Page with Price Total
-![Cart]( ![Screenshot 2025-06-28 140143](https://github.com/user-attachments/assets/baeae187-86de-4e95-a545-567735407419) )
+  ![Screenshot 2025-06-28 140143](https://github.com/user-attachments/assets/baeae187-86de-4e95-a545-567735407419) 
 
 ### 🔍 Filtering & Sorting
-![Filter and Sort]( ![image](https://github.com/user-attachments/assets/af2a92cf-6e29-4c24-98aa-453d976c0ee4) 
-![image](https://github.com/user-attachments/assets/a364c861-1be8-4fe8-b968-918860798ebb) )
+  ![image](https://github.com/user-attachments/assets/af2a92cf-6e29-4c24-98aa-453d976c0ee4) 
+
+  ![image](https://github.com/user-attachments/assets/a364c861-1be8-4fe8-b968-918860798ebb) 
 
 ---
 
 ## Screenshots
 
 >![image](https://github.com/user-attachments/assets/779a44d5-af51-48ad-be35-ecace6156579)
+>
+>
 ![image](https://github.com/user-attachments/assets/cbe89e31-4c21-4b67-b7e0-d0968f10d564)
 >
+>
 ![image](https://github.com/user-attachments/assets/1b22ea37-683f-4a39-9f99-34c14cc46865)
+
+
 ![image](https://github.com/user-attachments/assets/832c0e30-d8fb-4d7d-8449-16743b867d0b)
+
+
 ![image](https://github.com/user-attachments/assets/85fb7fbd-9628-4d28-9ac9-6bbb228b0acb)
 
 
