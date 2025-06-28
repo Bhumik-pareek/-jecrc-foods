@@ -38,6 +38,23 @@ Built for performance and user experience using **OpenJDK 24** and **IntelliJ ID
 - Basic filtering and UI features
 
 ---
+## 🖼️ Screenshots v1.1
+
+### 🔆 Light Theme – Home Page
+![Light Theme](![Screenshot 2025-06-28 135931](https://github.com/user-attachments/assets/0670aff4-2dbd-433f-beed-334a34b64b01) )
+
+
+### 🌙 Dark Theme – Home Page
+![Dark Theme]( ![Screenshot 2025-06-28 140050](https://github.com/user-attachments/assets/d91bc442-11e9-436a-84f0-9474f3667d75) )
+
+### 🛒 Cart Page with Price Total
+![Cart]( ![Screenshot 2025-06-28 140143](https://github.com/user-attachments/assets/baeae187-86de-4e95-a545-567735407419) )
+
+### 🔍 Filtering & Sorting
+![Filter and Sort]( ![image](https://github.com/user-attachments/assets/af2a92cf-6e29-4c24-98aa-453d976c0ee4) 
+![image](https://github.com/user-attachments/assets/a364c861-1be8-4fe8-b968-918860798ebb) )
+
+---
 
 ## Screenshots
 
