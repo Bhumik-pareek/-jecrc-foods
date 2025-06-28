@@ -1,17 +1,41 @@
 # JECRC Foods
 
-A JavaFX-based desktop food ordering application designed and developed by **Bhumik Pareek**. This intuitive GUI-based system allows users to browse through food categories, view products with images, add items to a cart, and filter/sort products by category or price. Built for performance and user experience using **OpenJDK 24** and **IntelliJ IDEA**.
+A JavaFX-based desktop food ordering application designed and developed by **Bhumik Pareek**.
+This intuitive GUI-based system allows users to browse through food categories, view products with real images, add items to a cart, and filter/sort products by category or price, toggle between light and dark themes.
+Built for performance and user experience using **OpenJDK 24** and **IntelliJ IDEA**.
 
 ---
 
 ## Features
 
-* ✅ Browse food products with real images
-* ✅ Filter by category (Pizza, Burgers, Indian, etc.)
-* ✅ Sort by price: Low to High / High to Low
-* ✅ Add items to shopping cart with quantity updates
-* ✅ View total cart price in INR
-* ✅ Modern, clean UI with responsive layout
+✅ Key Features- 
+
+🍱 Browse food items with real images for each product
+
+🧩 Filter by category: Pizza, Burgers, Indian, etc.
+
+🔃 Sort products by price: Low to High / High to Low
+
+🛒 Add items to cart with dynamic quantity updates
+
+💰 Real-time cart total calculation in INR
+
+🧑‍🎨 Modern, responsive UI built with JavaFX and CSS
+
+---
+
+## 📦 Version History
+
+### v1.1 – June 28, 2025
+- Implemented dark/light theme toggle using CSS and ThemeManager
+- Fixed layout and UI bugs across scenes
+- Improved CSS styling and structure for JavaFX components
+- Refined FXML and controller architecture for better maintainability
+
+### v1.0 – Initial Release
+- Core food ordering system with categories and cart
+- JavaFX-based multi-scene GUI
+- Basic filtering and UI features
 
 ---
 
@@ -62,7 +86,6 @@ git clone https://github.com/bhumik-pareek/jecrc-foods.git
 * ⭐ User Login & Authentication
 * ⭐ Checkout & Order Summary Screen
 * ⭐ Local database integration (SQLite/JSON)
-* ⭐ Dark Mode Toggle
 
 ---
 
